@@ -3152,3 +3152,26 @@ a img.aligncenter {
 .overlay-thumb .details .info {
   color: #ffffff !important;
 }
+.responsive-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+ 
+  .image-title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .row-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 40px;
+  }
+    
+  
+  
+  
