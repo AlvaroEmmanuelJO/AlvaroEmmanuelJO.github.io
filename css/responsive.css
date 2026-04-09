@@ -345,13 +345,14 @@
 /* Phones (480px and down) */
 @media (max-width: 480px) {
     .hero-container {
-        height: auto;
+        height: auto !important;
         min-height: 200px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
     .slider-wrapper {
         min-height: 200px !important;
+        overflow: visible !important;
     }
     .slider-description {
         position: relative !important;
@@ -363,16 +364,22 @@
     .slider-description-inner h1 {
         font-size: 28px !important;
         letter-spacing: 4px !important;
+        line-height: 1.4 !important;
     }
     .slider-description-inner h1 span {
         padding: 8px 12px !important;
-        line-height: 40px !important;
+        line-height: 1.4 !important;
         margin-left: 5px !important;
         font-size: 28px !important;
+        display: inline-block !important;
+        background: #001489 !important;
+        color: #fff !important;
     }
     .cd-intro {
+        float: none !important;
         margin-left: 3% !important;
         margin-top: 10px !important;
+        clear: both;
     }
     .cd-headline {
         font-size: 14px !important;
@@ -400,13 +407,14 @@
 /* Tablets and small phones (768px and down) */
 @media (max-width: 768px) {
     .hero-container {
-        height: auto;
+        height: auto !important;
         min-height: 250px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
     .slider-wrapper {
         min-height: 250px !important;
+        overflow: visible !important;
     }
     .slider-description {
         position: relative !important;
@@ -415,14 +423,20 @@
     .slider-description-inner h1 {
         font-size: 36px !important;
         letter-spacing: 5px !important;
+        line-height: 1.4 !important;
     }
     .slider-description-inner h1 span {
         padding: 10px 15px !important;
-        line-height: 50px !important;
+        line-height: 1.4 !important;
         font-size: 36px !important;
+        display: inline-block !important;
+        background: #001489 !important;
+        color: #fff !important;
     }
     .cd-intro {
+        float: none !important;
         margin-top: 10px !important;
+        clear: both;
     }
     .cd-headline {
         font-size: 16px !important;
@@ -430,6 +444,18 @@
     }
     .margin-top {
         margin-top: 40px !important;
+    }
+    .footer-inner {
+        height: auto !important;
+        padding: 15px 0;
+    }
+    /* Project pages - single portfolio */
+    .single-portfolio-wrapper {
+        padding: 0 10px;
+    }
+    .single-portfolio-wrapper p {
+        font-size: 14px;
+        line-height: 1.6;
     }
 }
 
