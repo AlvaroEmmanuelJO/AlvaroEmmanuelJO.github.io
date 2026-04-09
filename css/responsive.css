@@ -338,6 +338,108 @@
         font-size: 14px;
     }
 }
+/* ================================================================
+   Mobile-first responsive fixes
+   ================================================================ */
+
+/* Phones (480px and down) */
+@media (max-width: 480px) {
+    .hero-container {
+        height: auto;
+        min-height: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .slider-wrapper {
+        min-height: 200px !important;
+    }
+    .slider-description {
+        position: relative !important;
+        top: 0 !important;
+    }
+    .slider-description-inner {
+        margin-left: 3% !important;
+    }
+    .slider-description-inner h1 {
+        font-size: 28px !important;
+        letter-spacing: 4px !important;
+    }
+    .slider-description-inner h1 span {
+        padding: 8px 12px !important;
+        line-height: 40px !important;
+        margin-left: 5px !important;
+        font-size: 28px !important;
+    }
+    .cd-intro {
+        margin-left: 3% !important;
+        margin-top: 10px !important;
+    }
+    .cd-headline {
+        font-size: 14px !important;
+        margin-top: 15px !important;
+        letter-spacing: 2pt !important;
+    }
+    .margin-top {
+        margin-top: 30px !important;
+    }
+    .main-title h1, .history-wrapper h1 {
+        font-size: 22px !important;
+    }
+    .services-home-page h4 {
+        font-size: 14px;
+    }
+    .services-home-page p {
+        font-size: 13px;
+    }
+    .footer-inner {
+        height: auto !important;
+        padding: 15px 0;
+    }
+}
+
+/* Tablets and small phones (768px and down) */
+@media (max-width: 768px) {
+    .hero-container {
+        height: auto;
+        min-height: 250px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .slider-wrapper {
+        min-height: 250px !important;
+    }
+    .slider-description {
+        position: relative !important;
+        top: 0 !important;
+    }
+    .slider-description-inner h1 {
+        font-size: 36px !important;
+        letter-spacing: 5px !important;
+    }
+    .slider-description-inner h1 span {
+        padding: 10px 15px !important;
+        line-height: 50px !important;
+        font-size: 36px !important;
+    }
+    .cd-intro {
+        margin-top: 10px !important;
+    }
+    .cd-headline {
+        font-size: 16px !important;
+        margin-top: 15px !important;
+    }
+    .margin-top {
+        margin-top: 40px !important;
+    }
+}
+
+/* Desktop hero container */
+@media (min-width: 769px) {
+    .hero-container {
+        height: 380px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .cbp_tmtimeline:before {
         display: none;
