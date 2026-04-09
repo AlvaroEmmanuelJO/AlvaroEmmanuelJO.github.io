@@ -446,6 +446,15 @@ ul.sublist {
     height: 100%;
     z-index: 99999;
     background: rgba(232, 232, 232, 0.95);
+    /* Fallback: auto-hide preloader after 3s even if JS fails */
+    animation: coverFadeOut 0.8s ease-out 3s forwards;
+}
+@keyframes coverFadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 /* =Header

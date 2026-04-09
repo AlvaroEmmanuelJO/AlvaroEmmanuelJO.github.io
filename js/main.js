@@ -319,9 +319,23 @@ jQuery(document).ready(function($) {
     });
 
     //Finished loader
-    Pace.on("done", function() {
-        jQuery(".cover").addClass('animated fadeOutRight').fadeOut(1000);
-    });
+    function hidePreloader() {
+        var cover = jQuery(".cover");
+        if (cover.is(':visible')) {
+            cover.addClass('animated fadeOutRight').fadeOut(1000);
+        }
+    }
+
+    if (typeof Pace !== 'undefined') {
+        Pace.on("done", function() {
+            hidePreloader();
+        });
+    }
+
+    // Safety timeout: always remove preloader after 3 seconds
+    setTimeout(function() {
+        hidePreloader();
+    }, 3000);
 
     //Magnific Popup  
     jQuery('.popup-video').magnificPopup({
