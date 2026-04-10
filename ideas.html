@@ -50,6 +50,21 @@
 
     <!-- Modernizer & Respond js -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- Critical mobile styles (inline to avoid caching issues) -->
+    <style>
+        @media (max-width: 768px) {
+            .hero-container { height: auto !important; min-height: 220px; padding: 30px 0 20px; }
+            .slider-wrapper { min-height: 200px !important; overflow: visible !important; }
+            .slider-description { position: relative !important; top: auto !important; transform: none !important; }
+            .slider-description-inner { margin-left: 4% !important; }
+            .slider-description-inner h1 { font-size: 32px !important; letter-spacing: 4px !important; line-height: 1.6 !important; }
+            .slider-description-inner h1 span { background: #001489 !important; color: #fff !important; padding: 8px 14px !important; display: inline-block !important; line-height: 1.4 !important; font-size: 32px !important; margin-left: 5px !important; }
+            .cd-intro { float: none !important; clear: both !important; margin-left: 4% !important; margin-top: 10px !important; }
+            .cd-headline { font-size: 14px !important; margin-top: 10px !important; letter-spacing: 2pt !important; }
+            .cd-headline.clip .cd-words-wrapper::after { display: none !important; }
+        }
+    </style>
 </head>
 
 <body>
